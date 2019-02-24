@@ -1,0 +1,61 @@
+h1{
+  text-align: center;
+}
+.rock, .paper, .scissors{
+  font-size: 5em;
+  text-align: center;
+  cursor: pointer;
+}
+.box{
+  font-size: 10em;
+}
+
+.battlearea{
+  min-height: 20em;
+  width: 40% !important;
+}
+.scoreboard{
+  text-align: center;
+}
+
+.player{
+  text-align: center;
+}
+.computer{
+  text-align: center;
+}
+
+.selection{
+  width: 40%;
+}
+
+.youwin{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  text-align: center;
+  padding-top: 15%;
+  background-color: rgba(255,255,255,.8);
+  height: 100%;
+  transition: opacity 1s;
+}
+
+.you-win[style*="display: none;"]{
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fade-enter{
+       opacity: 0;
+   }
+.fade-enter-active{
+       transition: opacity 1s;
+   }
+.fade-leave{
+       /* opacity: 1; */
+   }
+.fade-leave-active{
+       transition: opacity 1s;
+       opacity: 0;
+}
